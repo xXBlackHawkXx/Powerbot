@@ -60,11 +60,6 @@ public class HawksRunecrafter extends PollingScript<org.powerbot.script.rt6.Clie
 	}
 
 	@Override
-	public void stop(){
-		ctx.controller().stop();
-	}
-
-	@Override
 	public void poll() {
 		for (Task task : tasks) {
 			if (task.activate()) {
